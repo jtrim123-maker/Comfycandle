@@ -459,7 +459,7 @@
           </div>
           <div class="burn" id="burn-cereal-milk">Approx. 30-hour burn time</div>
           <div class="row">
-            <span class="price" id="price-cereal-milk">$23 <small>shipped</small><br><span class="pickup">$18 local pickup</span></span>
+            <span class="price" id="price-cereal-milk">$23 <small>shipped</small><br><span class="pickup">$15 local pickup</span></span>
             <button class="buy" onclick="addToCart('cereal-milk')">Add to Cart</button>
           </div>
         </div>
@@ -482,7 +482,7 @@
           </div>
           <div class="burn" id="burn-scoop-there-it-is">Approx. 30-hour burn time</div>
           <div class="row">
-            <span class="price" id="price-scoop-there-it-is">$23 <small>shipped</small><br><span class="pickup">$18 local pickup</span></span>
+            <span class="price" id="price-scoop-there-it-is">$23 <small>shipped</small><br><span class="pickup">$15 local pickup</span></span>
             <button class="buy" onclick="addToCart('scoop-there-it-is')">Add to Cart</button>
           </div>
         </div>
@@ -505,7 +505,7 @@
           </div>
           <div class="burn" id="burn-vacation-mode">Approx. 30-hour burn time</div>
           <div class="row">
-            <span class="price" id="price-vacation-mode">$23 <small>shipped</small><br><span class="pickup">$18 local pickup</span></span>
+            <span class="price" id="price-vacation-mode">$23 <small>shipped</small><br><span class="pickup">$15 local pickup</span></span>
             <button class="buy" onclick="addToCart('vacation-mode')">Add to Cart</button>
           </div>
         </div>
@@ -528,7 +528,7 @@
           </div>
           <div class="burn" id="burn-straight-out-of-the-oven">Approx. 30-hour burn time</div>
           <div class="row">
-            <span class="price" id="price-straight-out-of-the-oven">$23 <small>shipped</small><br><span class="pickup">$18 local pickup</span></span>
+            <span class="price" id="price-straight-out-of-the-oven">$23 <small>shipped</small><br><span class="pickup">$15 local pickup</span></span>
             <button class="buy" onclick="addToCart('straight-out-of-the-oven')">Add to Cart</button>
           </div>
         </div>
@@ -551,7 +551,7 @@
           </div>
           <div class="burn" id="burn-whole-latte-love">Approx. 30-hour burn time</div>
           <div class="row">
-            <span class="price" id="price-whole-latte-love">$23 <small>shipped</small><br><span class="pickup">$18 local pickup</span></span>
+            <span class="price" id="price-whole-latte-love">$23 <small>shipped</small><br><span class="pickup">$15 local pickup</span></span>
             <button class="buy" onclick="addToCart('whole-latte-love')">Add to Cart</button>
           </div>
         </div>
@@ -574,7 +574,7 @@
           </div>
           <div class="burn" id="burn-october-glow">Approx. 30-hour burn time</div>
           <div class="row">
-            <span class="price" id="price-october-glow">$23 <small>shipped</small><br><span class="pickup">$18 local pickup</span></span>
+            <span class="price" id="price-october-glow">$23 <small>shipped</small><br><span class="pickup">$15 local pickup</span></span>
             <button class="buy" onclick="addToCart('october-glow')">Add to Cart</button>
           </div>
         </div>
@@ -654,7 +654,7 @@
     <label id="optPickup">
       <input type="radio" name="fulfill" value="pickup" onchange="setFulfill('pickup')">
       Local pickup
-      <small>5 oz $18 · 10 oz $32 · Valparaiso, IN</small>
+      <small>5 oz $15 · 10 oz $32 · Valparaiso, IN</small>
     </label>
   </div>
   <div class="cart-items" id="cartItems">
@@ -678,7 +678,7 @@ const PRODUCTS = {
   'october-glow':            {name:'October Glow'}
 };
 const SIZES = {
-  '5oz':  {label:'5 oz',  ship:23, pickup:18, b3:60,  b6:110, burn:'Approx. 30-hour burn time'},
+  '5oz':  {label:'5 oz',  ship:23, pickup:15, b3:60,  b6:110, burn:'Approx. 30-hour burn time'},
   '10oz': {label:'10 oz', ship:40, pickup:32, b3:105, b6:190, burn:''}
 };
 let cart = {};              // "slug|size" -> qty
@@ -801,3 +801,4 @@ render();
 
 </body>
 </html>
+
