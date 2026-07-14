@@ -1,4 +1,4 @@
-// Comfy Candles — Stripe checkout function
+// Comfy Candle — Stripe checkout function
 // Prices are computed HERE (server-side) so cart totals can't be tampered with.
 
 const PRODUCTS = {
@@ -90,8 +90,8 @@ exports.handler = async (event) => {
           unit_amount: totalCents,
           product_data: {
             name: fulfill === 'pickup'
-              ? 'Comfy Candles order (local pickup — Valparaiso, IN)'
-              : 'Comfy Candles order (free U.S. shipping)',
+              ? 'Comfy Candle order (local pickup — Valparaiso, IN)'
+              : 'Comfy Candle order (free U.S. shipping)',
             description: summary,
           },
         },
