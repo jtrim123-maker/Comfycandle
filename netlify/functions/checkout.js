@@ -98,6 +98,10 @@ exports.handler = async (event) => {
         quantity: 1,
       }],
       metadata: { cart: JSON.stringify(cart), fulfill },
+      payment_intent_data: {
+        description: (fulfill === 'pickup' ? 'PICKUP: ' : 'SHIP: ') + summary,
+        metadata: { cart: JSON.stringify(cart), fulfill },
+      },
       ...(fulfill === 'ship'
         ? { shipping_address_collection: { allowed_countries: ['US'] } }
         : {}),
